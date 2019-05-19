@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, inital-scale=1" name="viewport">
+	<meta author="Mahima Kapila">
+	<title>Body Fat Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Condensed|Muli|Righteous&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<div id="app-title">Body Fat Calculator</div>
+ 	
+	<table id="calculate-BMI">
+
+		<tr>
+			<th colspan="3">
+				<div id="app-subtitle" >Fill in the measurements below to estimate your body fat percentage!</div>
+			</th>
+		</tr>
+
+		<tr>
+
+			<th width="45%" valign="top">
+				<table class="female-male">
+					<tr>
+						<th colspan="3" id="Calc-female" width="45%">
+							Female
+						</th>
+					</tr>
+
+					<tr style="height: 20px;"></tr>
+
+					<tr class="inputs">
+						<th colspan="3" width="45%">
+							<span class="step">1</span><span class="circumferences">General</span>:
+						</th>
+					</tr>
+
+					<tr class="inputs">
+						<th>
+							Height
+						</th>
+						<th><input id="female-height"></input></th>
+						<th>inches</th>
+					</tr>
+
+
+					<tr class="inputs">
+						<th>
+							Weight
+						</th>
+						<th><input id="female-weight" ></input></th>
+						<th>lbs</th>
+					</tr>
+
+					<tr style="height: 10px;"></tr>
+
+					<tr class="inputs">
+						<th colspan="3" width="45%">
+							<span class="step">2</span><span class="circumferences">Circumferences</span>:
+						</th>
+					</tr>
+
+					<tr class="inputs">
+						<th>
+							Neck
+						</th>
+						<th><input id="female-Neck-Circumference" ></input></th>
+						<th>inches</th>
+					</tr>
+
+
+					<tr class="inputs">
+						<th>
+							Waist
+						</th>
+						<th><input id="female-waist"></input></th>
+						<th>inches</th>
+					</tr>
+					<tr class="inputs">
+						<th>
+							Hips
+						</th>
+						<th><input id="female-hips"></input></th>
+						<th>inches</th>
+					</tr>
+				</table>
+			</th>
+
+			<th width="10%">
+			</th>
+
+
+			<th width="45%" valign="top">
+				<table class="female-male">
+						<tr>
+							<th colspan="3" id="Calc-male" width="45%">
+								Male
+							</th>
+						</tr>
+
+						<tr style="height: 20px;"></tr>
+
+						<tr class="inputs">
+							<th colspan="3" width="45%">
+								<span class="step">1</span><span class="circumferences">General</span>:
+							</th>
+						</tr>
+
+						<tr class="inputs">
+							<th>
+								Height
+							</th>
+							<th><input id="male-height"></input></th>
+							<th>inches</th>
+						</tr>
+
+
+						<tr class="inputs">
+							<th>
+								Weight
+							</th>
+							<th><input id="male-weight" ></input></th>
+							<th>lbs</th>
+						</tr>
+
+						<tr style="height: 10px;"></tr>
+
+						<tr class="inputs">
+							<th colspan="3" width="45%">
+								<span class="step">2</span><span class="circumferences">Circumferences</span>:
+							</th>
+						</tr>
+
+						<tr class="inputs">
+							<th>
+								Neck
+							</th>
+							<th><input id="male-Neck-Circumference"></input></th>
+							<th>inches</th>
+						</tr>
+
+
+						<tr class="inputs">
+							<th>
+								Abdominal
+							</th>
+							<th><input id="male-abdominal"></input></th>
+							<th>inches</th>
+						</tr>
+						<tr class="inputs" height="46px">
+						</tr>
+					</table>
+			</th>
+
+		</tr>
+		
+		<tr>
+			<th colspan="3">
+				<div id="calculate-button">Calculate</div>
+			</th>
+		</tr>
+
+		<tr>
+			<th colspan="3">
+				<div id="clear-button">Clear</div>
+			</th>
+		</tr>
+
+		<tr>
+			<th colspan="3">
+				<div class="result">You have a body fat percentage of: <span id="percent"></span>%</div>
+				<div class="result">The recommended amounts are 20-25% for females and 8-14% for males.</div>
+			</th>
+		</tr>
+
+	</table>
+
+
+</body>

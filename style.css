@@ -1,0 +1,96 @@
+body {
+	background: radial-gradient(circle, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+#app-title{
+	margin-top: 35px;
+	font-size: 40px;
+	font-family: Arvo;
+	text-align: center;
+}
+#app-subtitle{
+	margin-top: -20px;
+	text-align: left;
+	font-family: Roboto Condensed;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+#calculate-BMI {
+	font-size: 30px;
+	font-family: Arvo;
+	margin: 50px auto;
+}
+.female-male {
+	max-width: 400px;
+	padding: 50px;
+	background: linear-gradient(to top right, rgba(117, 117, 255, 0.8), rgba(186, 203, 239, 0.7));
+	border-radius: 20px;
+	border: 5px solid rgba(255,255,255,0.3);
+	box-shadow: 0px 0px 30px 2px rgba(117, 117, 255,0.5);
+}
+.step {
+	padding: 10px;
+	border-radius: 50%;
+	background-color: rgb(190, 203, 239);
+	margin-left: -38px;
+	margin-right: 5px;
+}
+.circumferences {
+	text-decoration: underline;
+}
+.inputs{
+	font-size: 20px;
+	text-align: left;
+	font-family: Roboto Condensed;
+}
+input {
+	width: 100px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 4px solid rgba(255,255,255,0.3);
+	padding: 5px;
+	background: transparent;
+}
+#calculate-button{
+	background-color: rgb(126, 116, 255);
+	width: 200px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-family: Righteous;
+	padding: 10px;
+	margin-top: 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	margin-bottom: 10px;
+}
+#calculate-button:hover {
+	background-color: rgb(76, 66, 219);
+	cursor: pointer;
+}
+/*active = click*/
+#calculate-button:active {
+	background-color: rgb(255,255, 255);
+}
+#clear-button {
+	background-color: white;
+	width: 200px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-family: Righteous;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	margin-bottom: 50px;
+}
+#clear-button:hover {
+	background-color: rgb(176, 166, 255);
+	cursor: pointer;
+}
+/*active = click*/
+#clear-button:active {
+	background-color: rgb(255,255, 255);
+}
+.result {
+	font-size: 20px;
+}
